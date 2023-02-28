@@ -1,16 +1,16 @@
-#Strings
+# Strings
 
 favorite_word = "Resilience"
 print(favorite_word)
 
-#They are all lists!
+# They are all lists!
 
 my_name = "David"
 first_initial = my_name[0]
 print(first_initial)
 
-#Cut Me a Slice of Strings
-#Syntax string[first_index:last_index]
+# Cut Me a Slice of Strings
+# Syntax string[first_index:last_index]
 
 first_name = "Rodrigo"
 last_name = "Villanueva"
@@ -21,15 +21,61 @@ temp_password = last_name[2:6]
 print(new_account)
 print(temp_password)
 
-#Concatenating Strings
+# Concatenating Strings
 
 first_name = "Julie"
 last_name = "Blevins"
 
+
 def account_generator(first_name, last_name):
-  account_name = first_name[:3] + last_name[:3]
-  return account_name
+    account_name = first_name[:3] + last_name[:3]
+    return account_name
+
 
 new_account = account_generator(first_name, last_name)
 
 print(new_account)
+
+# More and More String Slicing (How Long is that String?)
+
+first_name = "Reiko"
+last_name = "Matsuki"
+
+
+def password_generator(first_name, last_name):
+    last_char = first_name[2:] + last_name[4:]
+    return last_char
+
+
+temp_password = password_generator(first_name, last_name)
+
+print(temp_password)
+
+
+#Negative Indices
+
+company_motto = "Copeland's Corporate Company helps you capably cope with the constant cacophony of daily life"
+
+second_to_last = company_motto[-2]
+final_word = company_motto[-4:]
+
+print(second_to_last)
+print(final_word)
+
+#String are Inmmutable
+
+first_name = "Bob"
+last_name = "Daily"
+
+fixed_first_name = 'R'+first_name[-2:]
+
+print(fixed_first_name)
+
+#Escape Characters
+
+password = "theycallme\"crazy\"91"
+print(password)
+
+
+#Iterating through Strings
+
