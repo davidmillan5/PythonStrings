@@ -64,3 +64,53 @@ print(reapers_line_one)
 winter_trees_lines = ['All the complicated details', 'of the attiring and', 'the disattiring are completed!', 'A liquid moon', 'moves gently among', 'the long branches.', 'Thus having prepared their buds', 'against a sure winter', 'the wise trees', 'stand sleeping in the cold.']
 winter_trees_full = '\n'.join(winter_trees_lines)
 print(winter_trees_full)
+
+# .strip()
+# Stripping a string removes all whitespace characters from the beginning and end.
+# You can also use .strip() with a character argument, which will strip that character from either end of the string.
+
+
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+love_maybe_lines_stripped = []
+for line in love_maybe_lines:
+  line_strip = line.strip()
+  love_maybe_lines_stripped.append(line_strip)
+
+print(love_maybe_lines_stripped)
+
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+
+print(love_maybe_full)
+
+# Replace .replace()
+# Replace takes two arguments and replaces all instances of the first argument in a string with the second argument.
+# string_name.replace(substring_being_replaced, new_substring)
+
+toomer_bio = \
+"""
+Nathan Pinchback Tomer, who adopted the name Jean Tomer early in his literary career, was born in Washington, D.C. in 1894. Jean is the son of Nathan Tomer was a mixed-race freedman, born into slavery in 1839 in Chatham County, North Carolina. Jean Tomer is most well known for his first book Cane, which vividly portrays the life of African-Americans in southern farmlands.
+"""
+toomer_bio_fixed = toomer_bio.replace('Tomer', 'Toomer')
+
+print(toomer_bio)
+print(toomer_bio_fixed)
+
+
+# .find()
+# .find() takes a string as an argument and searching the string it was run on for that string.
+# It then returns the first index value where that string is located.
+
+god_wills_it_line_one = "The very earth will disown you"
+disown_placement = god_wills_it_line_one.find('disown')
+print(disown_placement)
+
+
+# .format()
+# .format() takes variables as an argument and includes them in the string that it is run on.
+# You include {} marks as placeholders for where those variables will be imported.
+
+#Now you may be asking yourself, I could have written this function using string concatenation instead of .format(),
+# why is this method better? The answer is legibility and reusability. It is much easier to picture the end result .format()
+# than it is to picture the end result of string concatenation and legibility is everything. You can also reuse the same base
+# string with different variables, allowing you to cut down on unnecessary, hard to interpret code.
+
